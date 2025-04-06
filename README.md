@@ -43,7 +43,7 @@ medusa-ecs-deploy/
 
 ```bash
 npx create-medusa-app@latest
-
+```bash
 ---
 
 Dockerfile (in root)

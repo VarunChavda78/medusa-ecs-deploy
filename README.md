@@ -50,18 +50,26 @@ medusa-ecs-deploy/
 ---
 
 🔁 GitHub Actions CI/CD
+
 Every push to the main branch triggers a deployment pipeline.
 
 Workflow file: .github/workflows/deploy.yml
 
 🔐 GitHub Secrets Needed
+
 Secret Name	Description
-AWS_ACCESS_KEY_ID	Your AWS access key
-AWS_SECRET_ACCESS_KEY	Your AWS secret key
-AWS_REGION	AWS region (e.g. us-east-1)
-ECR_REPO	ECR repository URI
-CLUSTER_NAME	ECS cluster name
-SERVICE_NAME	ECS service name
+
+AWS_ACCESS_KEY_ID	- Your AWS access key
+
+AWS_SECRET_ACCESS_KEY	- Your AWS secret key
+
+AWS_REGION -	AWS region (e.g. us-east-1)
+
+ECR_REPO- ECR repository URI
+
+CLUSTER_NAME - ECS cluster name
+
+SERVICE_NAME - ECS service name
 
 ## 🔧 Setup Instructions
 

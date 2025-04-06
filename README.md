@@ -1,4 +1,4 @@
-# 🚀 MedusaJS Deployment on AWS ECS with Terraform and GitHub Actions
+# 🚀 MedusaJS Deployment on AWS ECS with Terraform & GitHub Actions
 
 This project demonstrates how to deploy the Medusa open-source headless commerce platform to **Amazon ECS (Fargate)** using **Infrastructure as Code (IaC)** with **Terraform** and automate deployments using **GitHub Actions**.
 

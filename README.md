@@ -37,6 +37,31 @@ medusa-ecs-deploy/
 
 ---
 
+📚 References
+[!MedusaJS Docs](https://docs.medusajs.com/v1)
+
+[!Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
+
+[!GitHub Actions](https://docs.github.com/en/actions)
+
+[!AWS ECS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html)
+
+---
+
+🔁 GitHub Actions CI/CD
+Every push to the main branch triggers a deployment pipeline.
+
+Workflow file: .github/workflows/deploy.yml
+
+🔐 GitHub Secrets Needed
+Secret Name	Description
+AWS_ACCESS_KEY_ID	Your AWS access key
+AWS_SECRET_ACCESS_KEY	Your AWS secret key
+AWS_REGION	AWS region (e.g. us-east-1)
+ECR_REPO	ECR repository URI
+CLUSTER_NAME	ECS cluster name
+SERVICE_NAME	ECS service name
+
 ## 🔧 Setup Instructions
 
 ### 1️⃣ MedusaJS Backend Setup
@@ -87,22 +112,6 @@ ECR Repository
 RDS PostgreSQL
 Security groups and IAM roles
 
----
-
-🔁 GitHub Actions CI/CD
-Every push to the main branch triggers a deployment pipeline.
-
-Workflow file: .github/workflows/deploy.yml
-
-🔐 GitHub Secrets Needed
-Secret Name	Description
-AWS_ACCESS_KEY_ID	Your AWS access key
-AWS_SECRET_ACCESS_KEY	Your AWS secret key
-AWS_REGION	AWS region (e.g. us-east-1)
-ECR_REPO	ECR repository URI
-CLUSTER_NAME	ECS cluster name
-SERVICE_NAME	ECS service name
-
 --- 
 
 ✅ Testing Deployment
@@ -115,17 +124,6 @@ Go to GitHub → Actions tab → check CI/CD workflow status
 Go to AWS Console → ECS → Clusters
 
 Check that a new task is deployed and running
-
----
-
-📚 References
-[!MedusaJS Docs](https://docs.medusajs.com/v1)
-
-[!Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
-
-[!GitHub Actions](https://docs.github.com/en/actions)
-
-[!AWS ECS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html)
 
 ---
 

@@ -38,13 +38,14 @@ medusa-ecs-deploy/
 ---
 
 📚 References
-[!MedusaJS Docs](https://docs.medusajs.com/v1)
 
-[!Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
+[MedusaJS Docs](https://docs.medusajs.com/v1)
 
-[!GitHub Actions](https://docs.github.com/en/actions)
+[Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 
-[!AWS ECS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html)
+[GitHub Actions](https://docs.github.com/en/actions)
+
+[AWS ECS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html)
 
 ---
 
@@ -68,10 +69,10 @@ SERVICE_NAME	ECS service name
 
 ```bash
 npx create-medusa-app@latest
-```bash
----
+```
 
 Dockerfile (in root)
+```bash
 FROM node:18
 
 WORKDIR /app
@@ -84,9 +85,10 @@ COPY backend/. .
 EXPOSE 9000
 CMD ["npm", "run", "start"]
 
----
+```
 
 Dockerignore 
+```bash
 
 node_modules
 .terraform
@@ -95,37 +97,34 @@ node_modules
 *.env
 *.exe
 
---- 
-
+```
 Terraform Deployment
+
+```bash
 
 terraform init
 terraform plan
 terraform apply
-
----
+```
 
 Terraform provisions:
+```bash
 VPC, Subnets, IGW
 ECS Cluster, Task Definition, Service
 ECR Repository
 RDS PostgreSQL
 Security groups and IAM roles
 
---- 
+```
 
 ✅ Testing Deployment
+
 Make a code change (e.g., edit README.md)
-
 Commit and push to main
-
 Go to GitHub → Actions tab → check CI/CD workflow status
-
 Go to AWS Console → ECS → Clusters
-
 Check that a new task is deployed and running
 
----
 
 🙋‍♂️ About Me
 Author: Harshit Khatsuriya

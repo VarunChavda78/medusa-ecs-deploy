@@ -28,12 +28,12 @@ medusa-ecs-deploy/
 ## ⚙️ Technologies Used
 
 - [MedusaJS v1](https://docs.medusajs.com/v1)
-- AWS ECS (Fargate)
+- [AWS ECS (Fargate)](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html)
 - AWS RDS (PostgreSQL)
 - AWS ECR
 - Terraform
 - Docker
-- GitHub Actions
+- [GitHub Actions](https://docs.github.com/en/actions)
 
 ---
 
@@ -120,11 +120,8 @@ Check that a new task is deployed and running
 
 📚 References
 [!MedusaJS Docs](https://docs.medusajs.com/v1)
-
 [!Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
-
 [!GitHub Actions](https://docs.github.com/en/actions)
-
 [!AWS ECS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html)
 
 ---

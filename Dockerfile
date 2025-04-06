@@ -4,16 +4,21 @@ FROM node:18
 # Set working directory
 WORKDIR /app
 
-# Copy files and install dependencies
-COPY . .
+# Copy backend code only
+COPY backend/package*.json ./backend/
+COPY backend/. ./backend/
 
+# Set working directory to backend inside container
+WORKDIR /app/backend
+
+# Install dependencies
 RUN npm install
 
-# Build (optional, depending on if you use TypeScript)
+# Build (if needed)
 # RUN npm run build
 
-# Expose the MedusaJS default port
+# Expose Medusa default port
 EXPOSE 9000
 
-# Start MedusaJS
+# Start Medusa
 CMD ["npm", "run", "start"]

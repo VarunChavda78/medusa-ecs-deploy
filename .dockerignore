@@ -1,0 +1,19 @@
+# Ignore node modules
+backend/node_modules
+
+# Ignore Git stuff
+.git
+.gitignore
+
+# Terraform stuff you don't want in Docker image
+infra/
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Local env files
+.env
+
+# Logs and system files
+*.log
+.DS_Store

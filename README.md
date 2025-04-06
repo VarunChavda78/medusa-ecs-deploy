@@ -120,14 +120,22 @@ Security groups and IAM roles
 ✅ Testing Deployment
 
 Make a code change (e.g., edit README.md)
+
 Commit and push to main
+
 Go to GitHub → Actions tab → check CI/CD workflow status
+
 Go to AWS Console → ECS → Clusters
+
 Check that a new task is deployed and running
 
+---
 
 🙋‍♂️ About Me
 Author: Harshit Khatsuriya
+
 GitHub: 1308harshit
+
 Email: khatsuriyaharshit@gmail.com
+
 LinkedIn: https://www.linkedin.com/in/harshit-khatsuriya-13a607274/

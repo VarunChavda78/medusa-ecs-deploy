@@ -146,4 +146,4 @@ GitHub: VarunChavda78
 
 Email: varunchavda078@gmail.com
 
-LinkedIn: https://www.linkedin.com/in/harsht-khatsuriya-13a607274/
+LinkedIn: https://www.linkedin.com/in/varun-chavda-614369270/

@@ -140,10 +140,10 @@ Check that a new task is deployed and running
 ---
 
 🙋‍♂️ About Me
-Author: Harshit Khatsuriya
+Author: Varun Chavda
 
-GitHub: 1308harshit
+GitHub: VarunChavda78
 
-Email: khatsuriyaharshit@gmail.com
+Email: varunchavda078@gmail.com
 
 LinkedIn: https://www.linkedin.com/in/harshit-khatsuriya-13a607274/
